@@ -15,3 +15,11 @@ test('creates a health potion object', () => {
 // new Car('Honda', 'Civic');
 // const car = new Car('Honda', 'Civic');
 // console.log(car);
+
+test('creates a random potion object', () => {
+    const potion = new Potion();
+
+    expect(potion.name).toEqual(expect.any(String));
+    expect(potion.name.length).toBeGreaterThan(0);
+    expect(potion.value).toEqual(expect.any(Number));
+});
